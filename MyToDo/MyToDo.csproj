@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <UseWindowsForms>False</UseWindowsForms>
+    <StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="IMG\321.jpg" />
+    <None Remove="IMG\login.png" />
+    <None Remove="IMG\R-C.jpg" />
+    <None Remove="IMG\wind.png" />
+    <None Remove="IMG\xm.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.1.2" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+    <PackageReference Include="RestSharp" Version="108.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyToDo.Shared\MyToDo.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="IMG\321.jpg" />
+    <Resource Include="IMG\login.png" />
+    <Resource Include="IMG\R-C.jpg" />
+    <Resource Include="IMG\wind.png" />
+    <Resource Include="IMG\xm.jpg" />
+  </ItemGroup>
+
+</Project>
